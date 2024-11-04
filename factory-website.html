@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能制造科技有限公司</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            line-height: 1.6;
+        }
+
+        /* 导航栏样式 */
+        .navbar {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #007bff;
+        }
+
+        /* 英雄区域样式 */
+        .hero {
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/api/placeholder/1920/1080");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 0 1rem;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* 关于我们部分 */
+        .section {
+            padding: 5rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .about-card {
+            padding: 2rem;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .about-card h3 {
+            margin: 1rem 0;
+        }
+
+        /* 产品展示部分 */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 1rem;
+        }
+
+        /* 联系我们部分 */
+        .contact {
+            background-color: #f8f9fa;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .contact-info {
+            text-align: center;
+        }
+
+        /* 页脚样式 */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">智能制造科技</div>
+            <div class="nav-links">
+                <a href="#home">首页</a>
+                <a href="#about">关于我们</a>
+                <a href="#products">产品展示</a>
+                <a href="#contact">联系我们</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>智能制造的未来</h1>
+            <p>引领工业4.0革命，打造智能化工厂解决方案</p>
+            <a href="#contact" class="cta-button">了解更多</a>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section class="section" id="about">
+        <h2 class="section-title">关于我们</h2>
+        <div class="about-grid">
+            <div class="about-card">
+                <h3>创新技术</h3>
+                <p>持续创新，引领行业发展，为客户提供最前沿的智能制造解决方案。</p>
+            </div>
+            <div class="about-card">
+                <h3>专业团队</h3>
+                <p>拥有经验丰富的专业团队，为客户提供全方位的技术支持和服务。</p>
+            </div>
+            <div class="about-card">
+                <h3>品质保证</h3>
+                <p>严格的质量管理体系，确保产品质量稳定可靠。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品展示 -->
+    <section class="section" id="products">
+        <h2 class="section-title">产品展示</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="/api/placeholder/400/300" alt="智能生产线">
+                <div class="product-info">
+                    <h3>智能生产线</h3>
+                    <p>全自动化生产线解决方案，提高生产效率。</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/api/placeholder/400/300" alt="工业机器人">
+                <div class="product-info">
+                    <h3>工业机器人</h3>
+                    <p>高精度工业机器人，实现智能化生产。</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/api/placeholder/400/300" alt="智能监控系统">
+                <div class="product-info">
+                    <h3>智能监控系统</h3>
+                    <p>实时监控生产过程，确保生产安全。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section class="section contact" id="contact">
+        <h2 class="section-title">联系我们</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>地址</h3>
+                <p>中国上海市浦东新区科技园区888号</p>
+            </div>
+            <div class="contact-info">
+                <h3>电话</h3>
+                <p>021-88888888</p>
+            </div>
+            <div class="contact-info">
+                <h3>邮箱</h3>
+                <p>contact@smarttech.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>© 2024 智能制造科技有限公司 版权所有</p>
+    </footer>
+</body>
+</html>
