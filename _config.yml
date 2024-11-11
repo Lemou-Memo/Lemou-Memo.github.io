@@ -1,0 +1,21 @@
+# 网站设置
+title: Lemou's Blog                    # 网站标题
+tagline: 个人技术博客                   # 副标题
+description: 分享技术与生活              # 描述
+url: 'https://lemou-memo.github.io'    # 你的 GitHub Pages URL
+
+# 作者信息
+author:
+  name: Lemou                          # 你的名字
+  avatar: /assets/img/avatar.jpg       # 头像图片
+  bio: 写点什么介绍自己                 # 个人简介
+
+# 社交链接（可选）
+social:
+  name: Lemou                          # 你的名字
+  links:
+    - https://github.com/Lemou-Memo    # GitHub 主页
+    # - https://twitter.com/username   # 其他社交链接
+
+# 主题设置
+theme_mode: dark    # 可选 light, dark 或 auto
