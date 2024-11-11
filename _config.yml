@@ -92,7 +92,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:https://ice.frostsky.com/2024/11/11/6675c629bf1bc759f461c057c6618f85.jpeg
+avatar: https://ice.frostsky.com/2024/11/11/6675c629bf1bc759f461c057c6618f85.jpeg
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
